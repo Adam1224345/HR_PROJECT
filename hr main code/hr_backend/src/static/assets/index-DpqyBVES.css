@@ -1,10 +1,4 @@
-/* Enhanced Professional CSS for HRMS Admin Dashboard */
-/* Refined from Tailwind v4.1.7, fixing layout issues (e.g., responsive grids, sidebar transforms, form alignments) */
-/* Ensures button interactivity (no erroneous pointer-events-none, proper z-index, focus states) */
-/* Improved professionalism: better color consistency, enhanced shadows, smoother transitions, accessibility */
-/* Standalone, modular, with full dark mode support and precise spacing/typography */
 
-/* CSS Custom Properties (Expanded from Tailwind for HRMS Theme) */
 :root {
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -118,8 +112,6 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
-
-/* Reset and Base Styles (Enhanced for Accessibility) */
 *,
 *::before,
 *::after {
@@ -196,8 +188,6 @@ hr {
   height: 1px;
   background-color: var(--border);
 }
-
-/* Layout Utilities (Fixed Responsive Issues) */
 .min-h-screen {
   min-height: 100vh;
 }
@@ -930,8 +920,6 @@ hr {
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
 }
-
-/* Cards (Enhanced Shadows and Spacing) */
 .card {
   background-color: var(--card);
   border: 1px solid var(--border);
@@ -968,7 +956,6 @@ hr {
   padding: 1.5rem;
 }
 
-/* Buttons (Fixed Interactivity: Ensured Clickable, Proper Focus) */
 .button {
   display: inline-flex;
   align-items: center;
@@ -1145,7 +1132,6 @@ hr {
   }
 }
 
-/* Avatars (Fixed Sizing) */
 .avatar {
   position: relative;
   display: inline-flex;
@@ -1167,8 +1153,6 @@ hr {
   height: 3.5rem;
   font-size: 1.25rem;
 }
-
-/* Badges (Improved Wrapping) */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -1195,8 +1179,6 @@ hr {
   background-color: var(--destructive);
   color: var(--destructive-foreground);
 }
-
-/* Switches (Fixed Thumb Alignment) */
 .switch {
   position: relative;
   display: inline-flex;
@@ -1232,8 +1214,6 @@ hr {
 .switch[data-state="checked"] .switch-thumb {
   transform: translateX(1.5rem);
 }
-
-/* Tables (Fixed Border and Overflow) */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -1261,8 +1241,6 @@ hr {
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
 }
-
-/* Modals/Overlays (Fixed Z-Index and Escape) */
 .overlay {
   position: fixed;
   inset: 0;
@@ -1291,7 +1269,7 @@ hr {
   animation: slideIn 0.3s ease-out;
 }
 
-/* Toast/Alert (Professional Dismiss) */
+
 .toast {
   position: fixed;
   top: 1.5rem;
@@ -1330,7 +1308,6 @@ hr {
   padding: 0.25rem;
 }
 
-/* Icons (Consistent Sizing) */
 .icon {
   display: inline-flex;
   align-items: center;
@@ -1406,7 +1383,7 @@ hr {
   }
 }
 
-/* Dark Mode (Auto-Detect and Manual Toggle) */
+
 @media (prefers-color-scheme: dark) {
   :root {
     @extend .dark;
@@ -1433,7 +1410,6 @@ hr {
   box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent);
 }
 
-/* Print Styles (Professional for Reports) */
 @media print {
   .no-print {
     display: none;
@@ -1449,8 +1425,6 @@ hr {
     border: 1px solid black;
   }
 }
-
-/* Custom HRMS Components (Layout Fixes) */
 .user-card {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1506,8 +1480,6 @@ hr {
     grid-template-columns: 1fr;
   }
 }
-
-/* Ensure All Buttons Are Clickable (Override Any Conflicts) */
 button,
 .button,
 [role="button"] {
